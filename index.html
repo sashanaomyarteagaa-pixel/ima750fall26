@@ -57,23 +57,25 @@
   <a href="Past Work.html" class="button">
             Past Work
         </a>
-<body>
-<img src="IMG_0565.jpeg" style="display: block; margin: 0 auto;" width="600" height="555">
+
+    <body>
+
+<video autoplay loop muted playsinline style="display: block; margin: 0 auto;" width="600" height="555">
+  <source src="your-video.mp4" type="video/mp4">
+</video>
+
 <style>
-img {
+video {
   border-radius: 8px;
-  /* Names the animation, makes it last 2 seconds, and loops it infinitely */
   animation: bounce 2s infinite ease-in-out; 
 }
 
-/* Defines the bounce movement */
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0); /* Starts and ends at the normal position */
+    transform: translateY(0); 
   }
   50% {
-    transform: translateY(-20px); /* Moves up by 20 pixels at the halfway mark */
+    transform: translateY(-20px); 
   }
 }
 </style>
-    
