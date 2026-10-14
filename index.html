@@ -7,7 +7,7 @@
     <title>My Website</title>
     
     <style>
-        /* 1. This handles the video placement at the absolute bottom layer */
+       
         #fullscreen-bg-video {
             position: fixed;
             top: 0;
@@ -19,23 +19,21 @@
             pointer-events: none; 
         }
 
-        /* 2. This forces your existing content to stay safely on top */
         .main-content-layer {
             position: relative;
             z-index: 1;
-            padding: 20px; /* Gives your text some breathing room from the screen edge */
+            padding: 20px; 
         }
     </style>
 </head>
 <body>
 
-    <!-- THE BACKGROUND VIDEO (Stays behind everything) -->
-    <video autoplay muted loop playsinline id="fullscreen-bg-video">
+
+    <video autoplay muted loop playsinline id="">
         <source src="Dancing625.mov" type="video/mp4">
-        Your browser does not support the video tag.
+   
     </video>
 
-    <!-- YOUR WEBSITE CONTENT LAYER (Stays on top) -->
     <div class="main-content-layer">
   
  <meta name="viewport" content="width=device-width, initial-scale=1">
