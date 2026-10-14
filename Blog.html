@@ -1,39 +1,64 @@
-<!DOCTYPE html>
-<html>
+<div class="buttons">   
+      <a href="index.html">← Back to home</a>
 <head>
-<style>
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  border: 3px solid green; 
-}
-</style>
-}
     <meta charset="UTF-8">
-    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reading Blogs</title>
     <style>
-    body {
-            background-color: lightgreen; 
-            color: black;           
-            font-family: sans-serif; 
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fafafa;
         }
-<body>
-        h1 {    
-            text-align: center;
+
+        .back-link {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            transition: color 0.2s;
         }
-        a {
-            color: black; /* Ensures links are readable against the olive background */
+
+        .back-link:hover {
+            color: #000;
         }
-    </style>
+
+        header {
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .statement-text {
+            font-size: 1.1rem;
+            margin-top: 30px;
+            color: #444;
+            text-align: justify;
+        }
+
+        
+        .page-container {
+            position: relative; 
+            min-height: 80vh; 
+            padding-bottom: 170px;
+        }
+
+    </style>        
 </head>
 <body>
 
-    <a href="index.html">← Back to Home</a>
-
-    <h1>Blog</h1>
-
+        <header>
+            <h1>Hear What I Have to Say</h1>
+        </header>
     <div class="post">
         <p>
             September 14, 2026
