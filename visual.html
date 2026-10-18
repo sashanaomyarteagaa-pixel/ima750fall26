@@ -22,7 +22,7 @@
             margin: 0 auto;
         }
 
-        /* Navigation Button Styling */
+       
         .buttons {
             margin-bottom: 30px;
         }
@@ -53,38 +53,38 @@
             letter-spacing: -0.5px;
         }
 
-        /* --- THE ESSAY GRID CREATION --- */
+        
         .essay-grid {
             display: grid;
-            /* Creates 3 columns: Left images (300px), Poem (Max 500px), Right images (300px) */
+           
             grid-template-columns: 300px minmax(300px, 500px) 300px;
             gap: 40px;
             align-items: start;
         }
 
-        /* Center Column: The Poem text */
+    
         .poem-column {
             grid-column: 2;
             font-size: 1.15rem;
             color: #222;
-            white-space: pre-line; /* Respects line breaks typed in HTML */
+            white-space: pre-line; 
             text-align: left;
             padding: 0 10px;
         }
 
-        /* Stanza spacing */
+       
         .stanza {
             margin-bottom: 2.5rem;
             font-style: italic;
         }
 
-        /* Side Columns for Figures (Image + Caption packages) */
+       
         .left-column {
             grid-column: 1;
             display: flex;
             flex-direction: column;
-            gap: 80px; /* Space between sequential images */
-            margin-top: 50px; /* Slightly offsets left from right */
+            gap: 80px; 
+            margin-top: 50px; 
         }
 
         .right-column {
@@ -94,18 +94,18 @@
             gap: 80px;
         }
 
-        /* Image and Caption Container Card */
+      
         figure {
             margin: 0;
             background: #ffffff;
             padding: 10px;
             border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Soft drop shadow */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
             transition: transform 0.3s ease;
         }
 
         figure:hover {
-            transform: translateY(-4px); /* Interactive lift on hover */
+            transform: translateY(-4px); 
         }
 
         figure img {
@@ -123,7 +123,7 @@
             line-height: 1.3;
         }
 
-        /* Responsive Design: Stack into a single elegant column on mobile screens */
+       
         @media (max-width: 900px) {
             .essay-grid {
                 display: flex;
@@ -136,7 +136,7 @@
                 margin: 0;
                 gap: 40px;
             }
-            /* Orders the elements cleanly on mobile: Left images, then poem, then right images */
+          
             .left-column { order: 1; }
             .poem-column { order: 2; margin: 40px 0; }
             .right-column { order: 3; }
@@ -157,33 +157,33 @@
             <h1>Lead In Our Bodies</h1>
         </header>
 
-        <!-- Main essay area splitting layout into 3 paths -->
+     
         <main class="essay-grid">
             
-            <!-- LEFT IMAGE COLUMN (7 Pics) -->
+           
             <div class="left-column">
                 <figure>
-                    <img src="left1.jpg" alt="Description 1">
+                    <img src="olduse0.jpg" alt="Description 1">
                     <figcaption>Caption for Left Image 1</figcaption>
                 </figure>
                 <figure>
-                    <img src="left2.jpg" alt="Description 2">
+                    <img src="olduse1.jpg" alt="Description 2">
                     <figcaption>Caption for Left Image 2</figcaption>
                 </figure>
                 <figure>
-                    <img src="left3.jpg" alt="Description 3">
+                    <img src="olduse3.jpg.jpg" alt="Description 3">
                     <figcaption>Caption for Left Image 3</figcaption>
                 </figure>
                 <figure>
-                    <img src="left4.jpg" alt="Description 4">
+                    <img src="olduse4.jpg" alt="Description 4">
                     <figcaption>Caption for Left Image 4</figcaption>
                 </figure>
                 <figure>
-                    <img src="left5.jpg" alt="Description 5">
+                    <img src="olduse55.jpg" alt="Description 5">
                     <figcaption>Caption for Left Image 5</figcaption>
                 </figure>
                 <figure>
-                    <img src="left6.jpg" alt="Description 6">
+                    <img src="olduse6.jpg" alt="Description 6">
                     <figcaption>Caption for Left Image 6</figcaption>
                 </figure>
                 <figure>
@@ -192,7 +192,7 @@
                 </figure>
             </div>
 
-            <!-- CENTER POEM COLUMN -->
+         
             <article class="poem-column">
                 <div class="stanza">
 A castle, I once called it! 
@@ -217,7 +217,7 @@ There is no weakness
                 </div>
 
                 <div class="stanza">
-How many years more for some basic right? 
+How many more years for some basic right? 
 “We’re taking meaningful steps to comply” 
 But when will you abide? 
 Fixing doesn’t come from a simple swing-by
@@ -243,34 +243,34 @@ By Sasha Naomy Arteaga
                 </div>
             </article>
 
-            <!-- RIGHT IMAGE COLUMN (7 Pics) -->
+          
             <div class="right-column">
                 <figure>
-                    <img src="right1.jpg" alt="Description 1">
+                    <img src="newuse1.heic" alt="Description 1">
                     <figcaption>Caption for Right Image 1</figcaption>
                 </figure>
                 <figure>
-                    <img src="right2.jpg" alt="Description 2">
+                    <img src="newuse2.heic" alt="Description 2">
                     <figcaption>Caption for Right Image 2</figcaption>
                 </figure>
                 <figure>
-                    <img src="right3.jpg" alt="Description 3">
+                    <img src="newuse2.heic" alt="Description 3">
                     <figcaption>Caption for Right Image 3</figcaption>
                 </figure>
                 <figure>
-                    <img src="right4.jpg" alt="Description 4">
+                    <img src="newuse4.heic" alt="Description 4">
                     <figcaption>Caption for Right Image 4</figcaption>
                 </figure>
                 <figure>
-                    <img src="right5.jpg" alt="Description 5">
+                    <img src="newuse5.heic" alt="Description 5">
                     <figcaption>Caption for Right Image 5</figcaption>
                 </figure>
                 <figure>
-                    <img src="right6.jpg" alt="Description 6">
+                    <img src="newuse6.heic" alt="Description 6">
                     <figcaption>Caption for Right Image 6</figcaption>
                 </figure>
                 <figure>
-                    <img src="right7.jpg" alt="Description 7">
+                    <img src="newuse7.heic" alt="Description 7">
                     <figcaption>Caption for Right Image 7</figcaption>
                 </figure>
             </div>
