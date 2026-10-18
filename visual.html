@@ -16,7 +16,22 @@
             background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
             background-size: 24px 24px; 
         }
-
+body {
+    /* Path to your converted JPG */
+    background-image: url('your-drawing.jpg'); 
+    
+    /* Prevents the image from repeating like a tile grid */
+    background-repeat: no-repeat; 
+    
+    /* Centers your art so the crop happens equally on the edges */
+    background-position: center center; 
+    
+    /* Makes the background stay fixed in place while scrolling */
+    background-attachment: fixed; 
+    
+    /* FORCES the image to scale proportionally to fill the screen */
+    background-size: cover; 
+}
         .page-container {
             max-width: 1100px; 
             margin: 0 auto;
