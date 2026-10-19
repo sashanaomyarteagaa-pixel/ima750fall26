@@ -96,7 +96,7 @@
             gap: 80px; 
             margin-top: 50px; 
             margin-left: -20px; 
-        } /* FIXED: Removed the extra trailing bracket that was here */
+        }
 
         .right-column {
             grid-column: 3;
@@ -116,7 +116,6 @@
             transition: transform 0.3s ease;
         }
 
-        /* FIXED: Removed space before :hover */
         figure:hover {
             transform: translateY(-4px); 
         }
@@ -126,7 +125,7 @@
             height: auto;
             display: block;
             border-radius: 4px;
-            cursor: pointer; /* Makes cursor turn into a hand over images */
+            cursor: pointer;
         }
 
         figcaption {
@@ -155,9 +154,7 @@
             .right-column { order: 3; }
         }
         
-        /* ==========================================
-           LIGHTBOX POPUP STYLES 
-           ========================================== */
+        /* Lightbox Layout Styles */
         .modal {
             display: none; 
             position: fixed; 
@@ -203,7 +200,6 @@
             cursor: pointer;
         }
 
-        /* FIXED: Removed space before :hover */
         .close-btn:hover {
             color: #bbb;
         }
@@ -227,6 +223,7 @@
 
         <main class="essay-grid">
                  
+            <!-- Left Column: New Images -->
             <div class="left-column">
                 <figure>
                     <img src="olduse1.jpg" alt="Description 1">
@@ -258,6 +255,7 @@
                 </figure>
             </div>
   
+            <!-- Middle Column: Poem -->
             <article class="poem-column">
                 <div class="stanza">
                     Poem line 1...
@@ -281,42 +279,50 @@
                 </div>
             </article>
 
-            <!-- Right Column - Added so your grid has its 3rd column ready -->
+            <!-- Right Column: Old Images -->
             <div class="right-column">
-                <!-- You can add your right-column figures here! -->
+                <figure>
+                    <img src="right1.jpg" alt="Right Description 1">
+                    <figcaption>Caption for Right Image 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="right2.jpg" alt="Right Description 2">
+                    <figcaption>Caption for Right Image 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="right3.jpg" alt="Right Description 3">
+                    <figcaption>Caption for Right Image 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="right4.jpg" alt="Right Description 4">
+                    <figcaption>Caption for Right Image 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="right5.jpg" alt="Right Description 5">
+                    <figcaption>Caption for Right Image 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="right6.jpg" alt="Right Description 6">
+                    <figcaption>Caption for Right Image 6</figcaption>
+                </figure>
+                <figure>
+                    <img src="right7.jpg" alt="Right Description 7">
+                    <figcaption>Caption for Right Image 7</figcaption>
+                </figure>
             </div>
         </main>
-    </div> <!-- Close page-container -->
+    </div>
 
-    <!-- ==========================================
-       ADDED: LIGHTBOX MODAL CONTAINER
-       ========================================== -->
+    <!-- Lightbox Pop Up Modal Overlay -->
     <div id="image-modal" class="modal">
         <span class="close-btn">&times;</span>
         <img class="modal-content" id="modal-img" alt="Zoomed view">
         <div id="modal-caption"></div>
     </div>
 
-    <!-- ==========================================
-       ADDED: INTERACTION ACTIONS JAVASCRIPT
-       ========================================== -->
+    <!-- Script triggers popup logic for all side images -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const modal = document.getElementById("image-modal");
             const modalImg = document.getElementById("modal-img");
             const captionText = document.getElementById("modal-caption");
-            const closeBtn = document.querySelector(".close-btn");
-
-            // Look through the grid for images
-            document.querySelectorAll(".essay-grid img").forEach(img => {
-                img.addEventListener("click", function() {
-                    modal. style.display = "block";
-                    modalImg.src = this.src;
-                    
-                    // Grab caption if it exists
-                    const parentFigure = this.closest("figure");
-                    if (parentFigure) {
-                        const figcaption = parentFigure.querySelector("figcaption");
-                        if (figcaption) {
-                            captionText.innerHTML = figcaption.innerHTML;
-                        } else {
