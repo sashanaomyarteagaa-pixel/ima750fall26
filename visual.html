@@ -16,6 +16,7 @@
             background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
             background-size: 24px 24px; 
         }
+        
 body {
    
     background-image: url('lead.jpg'); 
@@ -181,7 +182,61 @@ body {
             .poem-column { order: 2; margin: 40px 0; }
             .right-column { order: 3; }
         }
-    </style>        
+        
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            padding-top: 60px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 4px;
+            animation: zoomIn 0.3s ease;
+        }
+
+        #modal-caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 15px 0;
+            font-size: 1rem;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: #bbb;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+            </style>        
 </head>
 <body>
 
@@ -314,6 +369,7 @@ By Sasha Naomy Arteaga
 
         </main>
     </div>
+        
 
 </body>
 </html>
