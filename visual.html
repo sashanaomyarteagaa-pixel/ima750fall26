@@ -42,16 +42,33 @@ body {
             margin-bottom: 30px;
         }
 
-        .back-link {
-            text-decoration: none;
-            color: #666;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
+       
+.back-link {
+    text-decoration: none;
+    
+    /* 1. Added a light gray background (Adjust color code as you like) */
+    background-color: #f0f0f0; 
+    
+    /* 2. Added padding so the background box stretches around the text */
+    padding: 8px 16px; 
+    
+    /* 3. Added rounded corners and forced it to act like a button block */
+    border-radius: 4px;
+    display: inline-block; 
+    
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+    /* 4. Updated transition to smoothly animate both text and background changes */
+    transition: background-color 0.2s, color 0.2s; 
+}
 
-        .back-link:hover {
-            color: #000;
+.back-link:hover {
+    color: #000;
+    
+    /* 5. Changes the background color to a darker gray on hover */
+    background-color: #e0e0e0; 
         }
 
         header {
