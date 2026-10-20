@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sasha Naomy Arteaga Website</title>
+    <title>Title</title>
     
     <style>
-       
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        /* Your Fullscreen Video Style */
         #fullscreen-bg-video {
             position: fixed;
             top: 0;
@@ -24,133 +34,87 @@
             z-index: 1;
             padding: 20px; 
         }
+
+        /* Your White Header Styling */
+        .header-card {
+            background-color: white; 
+            padding: 20px 20px 10px 20px;
+        }
+
+        /* 👑 ADJUST THIS NUMBER to make buttons fall higher or lower */
+        .buttons {        
+            margin-top: 40px; 
+        }
+
+        /* Your Original Button Styles */
+        .button {
+            background-color: #FFFFFF;
+            border: none;           
+            border-radius: 8px;      
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.2s; 
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #ddd;
+        }
+
+        /* Your Original Bouncing Video Styles */
+        .bouncing-video {
+            display: block; 
+            margin: 30px auto 0 auto;
+            border-radius: 8px;
+            animation: bounce 2s infinite ease-in-out; 
+        }
+
+        @keyframes bounce {
+            0%, 100__ {
+                transform: translateY(0); 
+            }
+            50% {
+                transform: translateY(-20px); 
+            }
+        }
     </style>
 </head>
 <body>
 
-
-    <video autoplay muted loop playsinline id="">
+    <!-- 1. Fullscreen Background Video -->
+    <video autoplay muted loop playsinline id="fullscreen-bg-video">
         <source src="Dancing625.mov" type="video/mp4">
-   
     </video>
 
+    <!-- Content Wrapper -->
     <div class="main-content-layer">
-  
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+        
+        <!-- 2. Your White Heading Block -->
+        <header class="header-card">
+            <h1 style="color: #7AA0FF; margin: 0;">name</h1>
+            <h2 style="color: black; margin: 0; margin-top: 5px;">description</h2>
+        </header>
 
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  font-size: 17px;
- text-align: center;
- align-content: center;
-}
+        <!-- 3. Your Buttons (Now sitting lower) -->
+        <div class="buttons">        
+            <a href="statement.html" class="button">Artist Statement</a>
+            <a href="Blog.html" class="button">BLOG</a>
+            <a href="Projects.html" class="button">IMA Projects</a>
+            <a href="Past Work.html" class="button">Films</a>
+            <a href="work.html" class="button">Work with me!</a>
+        </div>
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
+        <!-- 4. Your Center Bouncing Video -->
+        <video autoplay loop muted playsinline class="bouncing-video" width="700" height="777">
+            <source src="Dancing625.mov" type="video/mp4">
+        </video>
 
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #7AA0FF;
-  width: 100%;
-  padding: 20px;
-}
+    </div>
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn: hover {
-  background: #ddd;
-  color: black;
-}
-</style>
- <div class="container">
-  <div class="vertical-center">
-  </div>
-</div>
-</head>
-<body>
-<video autoplay muted loop playsinline id="fullscreen-bg-video">
-    <source src="Dancing625.mov" type="video/mp4">
-</video>
-<body>
-</style>
-
-</style>
-</head>
-<body>
- <header>
-<div style="background-color: white; padding: 20px 20px 10px 20px >
-    <h1 style="text-align: center; color: #7AA0FF; margin: 0;">Sasha Naomy Arteaga</h1>
-    <h2 style="text-align: center; color: black; margin: 0;">WRITER - CREATIVE - SKILL DEVELOPER</h2>
-</div>
- <div class="buttons">        
-<style>
-.button {
-  background-color:#FFFFFF;
-  border: none;           
-  border-radius: 8px;      
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background 0.2s; 
-}
-</style>
-</head>
-    <a href="statement.html" class="button">
-            Artist Statement
-        </a>
-     <a href="Blog.html" class="button">
-            BLOG
-        </a>
-      <a href="Projects.html" class="button">
-            IMA Projects
-        </a>
-  <a href="Past Work.html" class="button">
-            Films
-        </a>
-
-  <a href="work.html" class="button">
-            Work with me!
-        </a>
-    <body>
-     
-</video>
-     <video autoplay loop muted playsinline style="display: block; margin: 0 auto;" width="700" height="777">
-  <source src= "Dancing625.mov" type="video/mp4">
-<style>
-video {
-  border-radius: 8px;
-  animation: bounce 2s infinite ease-in-out; 
-}
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); 
-  }
-  50% {
-    transform: translateY(-20px); 
-  }
-}
-</style>  
+</body>
+</html>
