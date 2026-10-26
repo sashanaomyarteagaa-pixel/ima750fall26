@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lead In Our Bodies- Visual Essay</title>
+    <title>title </title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -65,8 +65,6 @@
             text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
         }
     
-
-
         .essay-grid {
             display: grid;
             grid-template-columns: 300px minmax(300px, 500px) 300px;
@@ -225,7 +223,7 @@
 
         <main class="essay-grid">
        
-        
+            <!-- LEFT IMAGE COLUMN -->
             <div class="left-column">
                 <figure>
                     <img src="olduse1.jpg" alt="Description 1">
@@ -256,83 +254,79 @@
                     <figcaption>Caption for Left Image 7</figcaption>
                 </figure>
                  <figure>
-                    <img src="olduse8.jpg" alt="Description 7">
+                    <img src="olduse8.jpg" alt="Description 8">
                     <figcaption>Caption for Left Image 8</figcaption>
                 </figure>
             </div>
   
-          
+            <!-- MIDDLE POEM COLUMN -->
             <article class="poem-column">
                 <div class="stanza">
-                    A castle, I once called it! 
-                    Although tall and ominous 
-                    I viewed it to be beautiful
-                    Lack of change was prominent 
+                   poem 
                 </div>
                 <div class="stanza">
-                    That imagery fast gone 
-                    When it started feeling nerving 
-                    When my world started to crumble 
-                    Like my walls, meant for preserving 
-
+                   poem
                 </div>
                 <div class="stanza">
-                    Walls created to renew the ages 
-                    Suffering from cheapness 
-                    Even with broken walls
-                    there is no weakness 
+                   poem 
                 </div>
                 <div class="stanza">
-                    How many years more for some basic right? 
-                    “We’re taking meaningful steps to comply” 
-                    But when will you abide? 
-                    Fixing doesn’t come from a simple swing-by
+                  poem
                 </div>
                 <div class="stanza">
-                    And, yes, perhaps we are still here
-                    we have never been more alive 
-                    Resilience is what we are told to have 
-                    but it comes back from being deprived 
+                    poem
                 </div>
                  <div class="stanza">
-                    These walls will gather with us 
-                    One day they will stop falling 
-                    And I will clearly see that castle
-                    We will NOT stop calling  
+                poem 
                 </div>
             </article>
 
-           
+            <!-- RIGHT IMAGE COLUMN -->
             <div class="right-column">
                 <figure>
-                    <img src="newuse1.jpeg" alt="Right Description 1">
+                    <img src="olduse9.jpg" alt="Description 9">
                     <figcaption>Caption for Right Image 1</figcaption>
                 </figure>
                 <figure>
-                    <img src="newuse2.jpeg" alt="Right Description 2">
+                    <img src="olduse10.jpg" alt="Description 10">
                     <figcaption>Caption for Right Image 2</figcaption>
                 </figure>
                 <figure>
-                    <img src="newuse3.jpeg" alt="Right Description 3">
+                    <img src="olduse11.jpg" alt="Description 11">
                     <figcaption>Caption for Right Image 3</figcaption>
                 </figure>
                 <figure>
-                    <img src="newuse4.jpeg" alt="Right Description 4">
+                    <img src="olduse12.jpg" alt="Description 12">
                     <figcaption>Caption for Right Image 4</figcaption>
-                </figure>    
+                </figure>
                 <figure>
-                    <img src="newuse6.jpeg" alt="Right Description 6">
+                    <img src="olduse13.jpg" alt="Description 13">
+                    <figcaption>Caption for Right Image 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="olduse14.jpg" alt="Description 14">
                     <figcaption>Caption for Right Image 6</figcaption>
                 </figure>
                 <figure>
-                    <img src="newuse7.jpeg" alt="Right Description 7">
+                    <img src="olduse15.jpg" alt="Description 15">
                     <figcaption>Caption for Right Image 7</figcaption>
                 </figure>
+                 <figure>
+                    <img src="olduse16.jpg" alt="Description 16">
+                    <figcaption>Caption for Right Image 8</figcaption>
+                </figure>
             </div>
+
         </main>
     </div>
-    <div id="image-modal" class="modal">
+
+    <!-- The Pop-up Modal Box -->
+    <div id="imageModal" class="modal">
         <span class="close-btn">&times;</span>
-        <img class="modal-content" id="modal-img" alt="Zoomed view">
+        <img class="modal-content" id="expandedImg">
         <div id="modal-caption"></div>
     </div>
+
+    <!-- JavaScript logic to handle clicks on all images seamlessly -->
+    <script>
+        const modal = document.getElementById("imageModal");
