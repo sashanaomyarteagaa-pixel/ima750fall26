@@ -82,17 +82,25 @@
 }
         }
 
-       .stanza {
-    background-color: rgba(255, 255, 255, 0.65); 
-    color: #222; 
-    padding: 15px 20px; 
-    border-radius: 6px;
+      .stanza {
+    background-color: rgba(255, 255, 255, 0.85); /* 1. Increased opacity to 85% white so the background image doesn't bleed through as much */
+    color: #111111; /* 2. Solid dark charcoal text color for maximum contrast */
+    padding: 25px 30px; /* 3. Added more breathing room around the text inside the box */
+    border-radius: 8px;
     margin-bottom: 2.5rem;
     font-style: italic;
-    width: fit-content;
-    margin-left: auto; 
+    
+    /* 4. Layout fixes to make a solid card container */
+    width: 100%; /* Spreads the box across the entire center column */
+    max-width: 440px; /* Limits the width so it doesn't get too wide */
+    box-sizing: border-box; /* Ensures padding doesn't break the layout */
+    margin-left: auto; /* Centers the block itself */
     margin-right: auto;
-        }
+    text-align: center; /* Centers the text alignment inside the block */
+    
+    /* 5. Optional: Adds a subtle drop shadow to lift the box off the background image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+}
        
         .left-column {
             grid-column: 1;
