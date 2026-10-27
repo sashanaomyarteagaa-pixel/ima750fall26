@@ -72,25 +72,23 @@
             align-items: start;
         }
 
-       .poem-column {
+    .poem-column {
     grid-column: 2;
     font-size: 1.0rem;
-    color: lightred; 
+    color: #ff6666; /* Fixed 'lightred' to a real color hex code */
     white-space: pre-line; 
     text-align: center; 
     padding: 0 10px;
 }
-        }
 
-     .stanza {
-    background-color: #ffffff; /* 1. Solid white background (no transparency) */
-    color: #000000; /* 2. Pure black font color for maximum contrast */
-    padding: 30px; /* 3. Extra padding so the text doesn't touch the edges */
+.stanza {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 30px; 
     border-radius: 8px;
     margin-bottom: 2.5rem;
     font-style: italic;
     
-    /* Layout styling to keep it centered and neat */
     width: 100%; 
     max-width: 440px; 
     box-sizing: border-box; 
@@ -98,8 +96,9 @@
     margin-right: auto;
     text-align: center; 
     
-    /* 4. Stronger drop shadow to make the white cards pop off the background */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); 
+}
+ 
 
 }
        
